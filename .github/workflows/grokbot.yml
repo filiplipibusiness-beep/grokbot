@@ -1,4 +1,3 @@
-
 name: GROKBOT Paper Scheduler
 
 on:
@@ -7,21 +6,36 @@ on:
     - cron: '*/5 * * * *'
 
 permissions:
-  contents: read
+  contents: write
+
+concurrency:
+  group: grokbot-paper
+  cancel-in-progress: false
 
 jobs:
-  paper-check:
+  paper-trading:
     runs-on: ubuntu-latest
-    timeout-minutes: 2
+    timeout-minutes: 5
     steps:
       - name: Download repository
         uses: actions/checkout@v4
 
-      - name: Check Node.js
-        run: node --version
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
 
-      - name: Check GROKBOT files
+      - name: Run paper trading bot
+        run: node bot-runner.cjs
+
+      - name: Save paper trading state
         run: |
-          test -f app.js
-          test -f index.html
-          echo "GROKBOT files found"
+          if [ -f bot-state.json ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add bot-state.json
+            if ! git diff --cached --quiet; then
+              git commit -m "Update GROKBOT paper state"
+              git push
+            fi
+          fi
