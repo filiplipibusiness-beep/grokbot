@@ -1,0 +1,27 @@
+
+name: GROKBOT Paper Scheduler
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '*/5 * * * *'
+
+permissions:
+  contents: read
+
+jobs:
+  paper-check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    steps:
+      - name: Download repository
+        uses: actions/checkout@v4
+
+      - name: Check Node.js
+        run: node --version
+
+      - name: Check GROKBOT files
+        run: |
+          test -f app.js
+          test -f index.html
+          echo "GROKBOT files found"
