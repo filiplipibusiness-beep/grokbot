@@ -19,3 +19,15 @@ Upload `index.html`, `style.css`, and `app.js` to a GitHub repository root, then
 2. Realistic execution model (fees, slippage, liquidity), and daily risk based on marked-to-market drawdown.
 3. Backtest optimizer, profit factor, walk-forward validation and trade-by-trade exports.
 4. Optional server-side continuous ingestion for 24/7 running (not possible with GitHub Pages alone).
+
+## GROKBOT 2.0 – bezpečnostní aktualizace (paper trading)
+
+- Ceny otevřených pozic se dotazují zvlášť podle adres tokenů, nezávisle na seznamu objevených tokenů.
+- Cenová data starší než 90 sekund se nepoužijí k novým obchodům ani k automatickému uzavření.
+- Při spuštění stránky je automatický bot vždy pozastaven, dokud ho uživatel výslovně nezapne.
+- Denní ochrana zahrnuje realizovaný denní PnL a aktuální nerealizovaný PnL otevřených pozic (konzervativní aproximace; otevřené PnL může pocházet i z předchozích dní).
+- Paper nákup a prodej počítá s modelovým skluzem 0,5 % a poplatkem 0,25 % na každé straně. Skutečné náklady se mohou výrazně lišit.
+- Backtest používá stejné modelové náklady. Stále jde o zjednodušený backtest jednotlivých tokenů, **nikoli** realistickou simulaci společného portfolia.
+- Testy: `node tests/smoke.test.cjs` (Node.js 18+). Kontrola syntaxe: `node --check app.js`.
+
+**Omezení:** Projekt zůstává čistě klientskou webovou aplikací. Neposkytuje nepřetržitý běh na pozadí, nepoužívá on-chain audit tokenů a nedokáže garantovat exekuci stop-lossu během výpadku API. Nejde o živé obchodování ani o AI predikční model. Původní klíč `localStorage` zůstává zachován pro kompatibilitu se stávajícími daty. Před aktualizací doporučujeme exportovat historii.
