@@ -1,33 +1,25 @@
-# GROKBOT v1.0
-Static browser-only Solana memecoin scanner and paper trading terminal.
+# GROKBOT 3.0 FINAL — Solana paper trading
 
-## Deployment
-Upload `index.html`, `style.css`, and `app.js` to a GitHub repository root, then enable GitHub Pages → Deploy from a branch → main / (root). No build or API keys needed.
+Browser-only Solana market scanner and **virtual-money** trading simulator. No wallet connection, signing, blockchain transactions or real-money orders. The score is a heuristic, **not AI** and not a prediction of profit. Memecoins may lose all their value.
 
-## Data and constraints
-- Public DEX Screener latest token profiles + latest boosts discovery, then `/tokens/v1/solana/{addresses}` market pairs. Discovery is NOT a complete Pump.fun new-token feed and may contain older tokens.
-- Market scoring is a transparent weighted heuristic, **not an AI model**. Market-cap momentum uses 24h price change as an explicitly labeled proxy; actual historical market cap is not provided.
-- Auto trading runs only while the page is active, with 60-second polling subject to browser throttling and API limits. No wallet, real orders, or transaction signing.
-- Paper execution uses last observed market price with **zero fees and slippage**. Thin pools may make simulated results highly unrealistic. Stale prices are displayed but never used for new closes.
-- Positions for tokens no longer in the discovery set cannot update or close until the token reappears. The browser-only implementation does not guarantee continuous coverage.
-- Snapshots are localStorage-only and capped (2000 snapshots/token, 150 tokens). Browser data clearing deletes history and trades; export regularly.
-- Backtesting is a minimal per-token chronological training/holdout split on actual recorded snapshots, with no optimization or walk-forward implementation in v1. No synthetic history. Open positions are excluded from realized PnL.
-- Profit factor in the live account is not displayed in v1; see next milestones.
+## Install on GitHub Pages (iPhone compatible)
 
-## Next modules
-1. Reliable token-address watchlist and price refresh for open positions, even if discovery drops them.
-2. Realistic execution model (fees, slippage, liquidity), and daily risk based on marked-to-market drawdown.
-3. Backtest optimizer, profit factor, walk-forward validation and trade-by-trade exports.
-4. Optional server-side continuous ingestion for 24/7 running (not possible with GitHub Pages alone).
+Copy `index.html`, `app.js`, `style.css` and `README.md` to the root of your GitHub repository (not the ZIP itself). In Settings → Pages choose **Deploy from a branch**, `main`, `/ (root)` and save. Open `https://YOUR-USERNAME.github.io/grokbot/`. GitHub Pages hosts a static site only; it cannot run the bot continuously in the background.
 
-## GROKBOT 2.0 – bezpečnostní aktualizace (paper trading)
+**Before replacing an existing version:** Export your trade CSV and historical JSON. The app retains the `grokbot-v1` localStorage key so existing paper positions and history can remain available **on the same browser and site origin**. Never upload private keys or API credentials. Keep a backup of the prior source files.
 
-- Ceny otevřených pozic se dotazují zvlášť podle adres tokenů, nezávisle na seznamu objevených tokenů.
-- Cenová data starší než 90 sekund se nepoužijí k novým obchodům ani k automatickému uzavření.
-- Při spuštění stránky je automatický bot vždy pozastaven, dokud ho uživatel výslovně nezapne.
-- Denní ochrana zahrnuje realizovaný denní PnL a aktuální nerealizovaný PnL otevřených pozic (konzervativní aproximace; otevřené PnL může pocházet i z předchozích dní).
-- Paper nákup a prodej počítá s modelovým skluzem 0,5 % a poplatkem 0,25 % na každé straně. Skutečné náklady se mohou výrazně lišit.
-- Backtest používá stejné modelové náklady. Stále jde o zjednodušený backtest jednotlivých tokenů, **nikoli** realistickou simulaci společného portfolia.
-- Testy: `node tests/smoke.test.cjs` (Node.js 18+). Kontrola syntaxe: `node --check app.js`.
+## What changed in 3.0
 
-**Omezení:** Projekt zůstává čistě klientskou webovou aplikací. Neposkytuje nepřetržitý běh na pozadí, nepoužívá on-chain audit tokenů a nedokáže garantovat exekuci stop-lossu během výpadku API. Nejde o živé obchodování ani o AI predikční model. Původní klíč `localStorage` zůstává zachován pro kompatibilitu se stávajícími daty. Před aktualizací doporučujeme exportovat historii.
+- Automatic entries require: heuristic score above your configured threshold, at least 80% indicator coverage, liquidity >= $50,000, 24h volume >= $20,000, no flagged scoring risks, at least four valid price observations covering >= 2 minutes, a modest positive trend (0.5%–12%), and a non-declining final tick. A sold token has a six-hour re-entry cooldown. **These checks do not prove that a token is safe** and cannot reliably detect rug pulls or honeypots.
+- Open positions are independently refreshed by token address, and missing/stale quotes block new trades. Stop loss/take profit only execute when the browser is open and an updated quote arrives; execution at the threshold price is **not guaranteed**.
+- Portfolio equity and open PnL use conservative estimated liquidation value after modeled 0.25% fee and 0.50% slippage per side. Real market impact can be far worse, especially in thin pools.
+- Backtest uses a shared chronological cutoff across tokens, evaluates the previous tick's score and trend and enters at the following tick (no same-tick signal execution). Open positions are marked to estimated liquidation value at period end. Results are **not** a live-execution forecast, do not fully reproduce all live filters, and per-token drawdowns are not a portfolio drawdown.
+- API errors disable automatic trading until the user restarts it. Automatic trading is disabled on each new page load.
+
+## Limitations
+
+Discovery uses public DEX Screener latest token profiles and boosts, **not** an exhaustive Solana or Pump.fun token feed. API prices may be delayed or untradeable; API requests may fail or be rate-limited. Snapshots are only collected while the page is active, generally every 60 seconds, and stored locally (capped to 2000 per token and 150 tokens). iOS may suspend background tabs. Browser storage may be cleared or exhausted. The simulator does not account for gas, MEV, liquidity changes, transaction failures, taxes, chain outages or actual executable pool depth. The backtest is exploratory and uses short, sparse snapshots, so avoid optimizing parameters on tiny holdout samples.
+
+## Tests
+
+With Node.js 20+: `node --check app.js` and `node tests/smoke.test.cjs`. Tests are local logic smoke checks; they do not validate live DEX Screener API behavior or browser compatibility on every device.
