@@ -1,7 +1,7 @@
 'use strict';
 /* GROKBOT: browser-only paper trading. No wallet or blockchain write calls. */
 const API='https://api.dexscreener.com';
-const KEY='grokbot-v1';
+const KEY='grokbot-v1';const BOT_STATE_URL='https://filiplipibusiness-beep.github.io/grokbot/bot-state.json';
 const QUOTE_MAX_AGE=90000; // 90 s: fail closed on stale quotes
 const FEE_RATE=0.0025; // illustrative 0.25% per side, not exchange-specific
 const SLIPPAGE_RATE=0.005; // illustrative 0.50% per side
