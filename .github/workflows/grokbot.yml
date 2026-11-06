@@ -39,5 +39,5 @@ jobs:
               git push
             fi
           fi
-                - name: GROKBOT safety test
+      - name: GROKBOT safety test
         run: node grokbot-safety-test.cjs
