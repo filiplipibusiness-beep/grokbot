@@ -172,7 +172,15 @@ async function loadBotState(){
     const response = await fetch(BOT_STATE_URL + '?t=' + Date.now(), {cache:'no-store'});
     if (!response.ok) throw new Error('HTTP ' + response.status);
     const data = await response.json();
-    console.log('GROKBOT GitHub state:', data);
+    if (data && typeof data.cash === 'number' &&
+    Array.isArray(data.positions) &&
+    Array.isArray(data.trades)) {
+  state.cash = data.cash;
+  state.positions = data.positions;
+  state.trades = data.trades;
+  state.running = false;
+  renderAll();
+}
   } catch (error) {
     console.error('GROKBOT state error:', error);
   }
