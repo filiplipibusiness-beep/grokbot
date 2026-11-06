@@ -167,3 +167,14 @@ function init(){document.querySelectorAll('[data-page]').forEach(b=>b.addEventLi
  $('exportHistory').addEventListener('click',()=>download('grokbot-history.json',JSON.stringify(state.history,null,2),'application/json'));
  $('runBacktest').addEventListener('click',runBacktest);renderAll();fetchMarkets();setInterval(()=>{if(!document.hidden)fetchMarkets()},60000);document.addEventListener('visibilitychange',()=>{if(!document.hidden&&Date.now()-lastRefresh>60000)fetchMarkets()});}
 init();
+async function loadBotState(){
+   try {
+    const response = await fetch(BOT_STATE_URL + '?t=' + Date.now(), {cache:'no-store'});
+    if (!response.ok) throw new Error('HTTP ' + response.status);
+    const data = await response.json();
+    console.log('GROKBOT GitHub state:', data);
+  } catch (error) {
+    console.error('GROKBOT state error:', error);
+  }
+}
+loadBotState();
