@@ -14,7 +14,7 @@
       "address": "HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump",
       "symbol": "GATO",
       "entry": 0.0125826,
-      "lastPrice": 0.01307,
+      "lastPrice": 0.01284,
       "qty": 11891.421486815127,
       "size": 150,
       "ts": 1794045989385,
@@ -842,6 +842,12 @@
         "price": 0.0002855,
         "score": 52,
         "symbol": "Leonida"
+      },
+      {
+        "ts": 1794084388293,
+        "price": 0.0002183,
+        "score": 58,
+        "symbol": "Leonida"
       }
     ],
     "4AN9uwPTNFfFCFzR4n9KaVk3JyLmMACewf3aXV6Zpump": [
@@ -1079,6 +1085,12 @@
         "ts": 1794082190062,
         "price": 0.0002454,
         "score": 42,
+        "symbol": "CHRLE"
+      },
+      {
+        "ts": 1794084388293,
+        "price": 0.0002455,
+        "score": 40,
         "symbol": "CHRLE"
       }
     ],
@@ -2408,110 +2420,12 @@
         "price": 0.000003421,
         "score": 50,
         "symbol": "HLYS"
-      }
-    ],
-    "FFgnd8bifG8zGBE7dij7g3HWp4gveJS4gDyjdk5epump": [
-      {
-        "ts": 1794037110444,
-        "price": 0.00006164,
-        "score": 68,
-        "symbol": "trauma "
       },
       {
-        "ts": 1794040065417,
-        "price": 0.00006648,
-        "score": 68,
-        "symbol": "trauma "
-      },
-      {
-        "ts": 1794043131919,
-        "price": 0.00005829,
-        "score": 58,
-        "symbol": "trauma "
-      },
-      {
-        "ts": 1794045989385,
-        "price": 0.0000837,
-        "score": 61,
-        "symbol": "trauma "
-      }
-    ],
-    "E5uKc6uneG7xeVaXst5oW7Pzh1g7E95b3vKnSzN3pump": [
-      {
-        "ts": 1794037110444,
-        "price": 0.000002681,
-        "score": 67,
-        "symbol": "TAILER"
-      },
-      {
-        "ts": 1794040065417,
-        "price": 0.00000268,
-        "score": 40,
-        "symbol": "TAILER"
-      },
-      {
-        "ts": 1794043131919,
-        "price": 0.000002682,
-        "score": 48,
-        "symbol": "TAILER"
-      },
-      {
-        "ts": 1794045989385,
-        "price": 0.00000266,
-        "score": 48,
-        "symbol": "TAILER"
-      }
-    ],
-    "Ef8veCkBGFnovD9ZHLx7draEU2EkLjs1yvNq744jpump": [
-      {
-        "ts": 1794037110444,
-        "price": 0.000002786,
-        "score": 65,
-        "symbol": "FATSHANE"
-      },
-      {
-        "ts": 1794040065417,
-        "price": 0.000002549,
-        "score": 37,
-        "symbol": "FATSHANE"
-      },
-      {
-        "ts": 1794043131919,
-        "price": 0.000002542,
-        "score": 46,
-        "symbol": "FATSHANE"
-      },
-      {
-        "ts": 1794045989385,
-        "price": 0.000002536,
-        "score": 46,
-        "symbol": "FATSHANE"
-      }
-    ],
-    "E41AUfHuU7EYf4iisZxRYKghAjRKmMwnkqt1HJU6pump": [
-      {
-        "ts": 1794037110444,
-        "price": 0.00004122,
-        "score": 62,
-        "symbol": "BaiBai"
-      },
-      {
-        "ts": 1794040065417,
-        "price": 0.00003883,
-        "score": 73,
-        "symbol": "BaiBai"
-      },
-      {
-        "ts": 1794043131919,
-        "price": 0.00003621,
-        "score": 59,
-        "symbol": "BaiBai"
-      },
-      {
-        "ts": 1794045989385,
-        "price": 0.00003127,
-        "score": 39,
-        "symbol": "BaiBai"
+        "ts": 1794084388293,
+        "price": 0.000003405,
+        "score": 50,
+        "symbol": "HLYS"
       }
     ],
     "6psruuGkna3YAcyh6gEK7XaHqiKiruR5B9qxWUgXpump": [
@@ -3236,6 +3150,12 @@
         "price": 0.00001516,
         "score": 45,
         "symbol": "TERSO"
+      },
+      {
+        "ts": 1794084388293,
+        "price": 0.00001673,
+        "score": 59,
+        "symbol": "TERSO"
       }
     ],
     "LTE6P1KHQVgkzrmvTrApwfx6nsDX8T9JEVNSLNrpump": [
@@ -3429,6 +3349,12 @@
         "ts": 1794082190062,
         "price": 0.00006013,
         "score": 56,
+        "symbol": "timmy"
+      },
+      {
+        "ts": 1794084388293,
+        "price": 0.00005784,
+        "score": 39,
         "symbol": "timmy"
       }
     ],
@@ -3676,6 +3602,12 @@
         "price": 0.00002166,
         "score": 57,
         "symbol": "kuro"
+      },
+      {
+        "ts": 1794084388293,
+        "price": 0.0000246,
+        "score": 65,
+        "symbol": "kuro"
       }
     ],
     "SCGBBnSwnekytGFHgyeHHxPMiN7xDxsWFGg9JgFSTNK": [
@@ -3761,6 +3693,12 @@
         "ts": 1794082190062,
         "price": 0.0006418,
         "score": 65,
+        "symbol": "MAMESUKE"
+      },
+      {
+        "ts": 1794084388293,
+        "price": 0.0005629,
+        "score": 41,
         "symbol": "MAMESUKE"
       }
     ],
@@ -4130,6 +4068,12 @@
         "price": 0.00003374,
         "score": 31,
         "symbol": "DACITY"
+      },
+      {
+        "ts": 1794084388293,
+        "price": 0.00003215,
+        "score": 50,
+        "symbol": "DACITY"
       }
     ],
     "FdkG3mGaq8BcnYejs1fR4y6NV2wVmDjkRLYEWvjSpump": [
@@ -4258,6 +4202,12 @@
         "price": 0.00008641,
         "score": 65,
         "symbol": "HOPE"
+      },
+      {
+        "ts": 1794084388293,
+        "price": 0.00008771,
+        "score": 51,
+        "symbol": "HOPE"
       }
     ],
     "A75Xx6SeftAmWduv9KGwb2GCjXUAhxozcCUCys9jpump": [
@@ -4319,6 +4269,12 @@
         "ts": 1794082190062,
         "price": 0.00288,
         "score": 58,
+        "symbol": "HELL"
+      },
+      {
+        "ts": 1794084388293,
+        "price": 0.002771,
+        "score": 56,
         "symbol": "HELL"
       }
     ],
@@ -4620,6 +4576,12 @@
         "price": 0.000007857,
         "score": 21,
         "symbol": "SHANE"
+      },
+      {
+        "ts": 1794084388293,
+        "price": 0.000006987,
+        "score": 28,
+        "symbol": "SHANE"
       }
     ],
     "75VDY6P9kJyAp7QGYRzq7o85oKBSXpR9XmaWVHcspump": [
@@ -4764,6 +4726,12 @@
         "price": 0.0001079,
         "score": 55,
         "symbol": "sexcoin"
+      },
+      {
+        "ts": 1794084388293,
+        "price": 0.00008613,
+        "score": 41,
+        "symbol": "sexcoin"
       }
     ],
     "HfAimQ71tRyonnu8KiKy1tZ52MieNdS43mawGsqapump": [
@@ -4904,6 +4872,12 @@
         "price": 4.568e-7,
         "score": 44,
         "symbol": "PEPE"
+      },
+      {
+        "ts": 1794084388293,
+        "price": 5.479e-7,
+        "score": 52,
+        "symbol": "PEPE"
       }
     ],
     "HoqJaoes6yfL8YEsHGfENwVKT7LrAPy97ZDg9hmBu4Ep": [
@@ -4923,6 +4897,12 @@
         "ts": 1794082190062,
         "price": 0.0001513,
         "score": 53,
+        "symbol": "THUG"
+      },
+      {
+        "ts": 1794084388293,
+        "price": 0.0001497,
+        "score": 38,
         "symbol": "THUG"
       }
     ],
@@ -5164,6 +5144,12 @@
         "price": 0.00001102,
         "score": 42,
         "symbol": "BTC"
+      },
+      {
+        "ts": 1794084388293,
+        "price": 0.000009946,
+        "score": 42,
+        "symbol": "BTC"
       }
     ],
     "9pqtMh3DnydKbAvTp97N9ht1mkUB8wvvsTefg4KzM8se": [
@@ -5195,6 +5181,12 @@
         "ts": 1794082190062,
         "price": 0.0000473,
         "score": 49,
+        "symbol": "LUCIA"
+      },
+      {
+        "ts": 1794084388293,
+        "price": 0.00003497,
+        "score": 69,
         "symbol": "LUCIA"
       }
     ],
@@ -5291,6 +5283,12 @@
       },
       {
         "ts": 1794082190062,
+        "price": 0.00004542,
+        "score": 34,
+        "symbol": "LLD"
+      },
+      {
+        "ts": 1794084388293,
         "price": 0.00004542,
         "score": 34,
         "symbol": "LLD"
@@ -5448,6 +5446,12 @@
         "price": 0.00004343,
         "score": 52,
         "symbol": "STM"
+      },
+      {
+        "ts": 1794084388293,
+        "price": 0.0000435,
+        "score": 44,
+        "symbol": "STM"
       }
     ],
     "C891rB7xCUAztoAinptQFbDiDnDhJf3NQWALP98fpump": [
@@ -5487,6 +5491,12 @@
         "ts": 1794082190062,
         "price": 0.00008958,
         "score": 69,
+        "symbol": "Whitehouse"
+      },
+      {
+        "ts": 1794084388293,
+        "price": 0.00009903,
+        "score": 50,
         "symbol": "Whitehouse"
       }
     ],
@@ -5528,6 +5538,12 @@
         "price": 0.00005615,
         "score": 56,
         "symbol": "GTA6COP"
+      },
+      {
+        "ts": 1794084388293,
+        "price": 0.00004387,
+        "score": 53,
+        "symbol": "GTA6COP"
       }
     ],
     "2QvHVcsXYid5LaPWniQhugGsP1nFT9cpZhCXrfznpump": [
@@ -5547,6 +5563,12 @@
         "ts": 1794082190062,
         "price": 0.000005504,
         "score": 61,
+        "symbol": "TRSH"
+      },
+      {
+        "ts": 1794084388293,
+        "price": 0.000005422,
+        "score": 54,
         "symbol": "TRSH"
       }
     ],
@@ -5608,6 +5630,12 @@
         "price": 0.000003205,
         "score": 22,
         "symbol": "MACCA"
+      },
+      {
+        "ts": 1794084388293,
+        "price": 0.000003322,
+        "score": 27,
+        "symbol": "MACCA"
       }
     ],
     "5zM1pJUr3BJ3EWf5gG3Fsm5QtNuJR55LKJh4UtSQUALL": [
@@ -5662,6 +5690,12 @@
         "price": 0.000001686,
         "score": 38,
         "symbol": "José"
+      },
+      {
+        "ts": 1794084388293,
+        "price": 0.000001668,
+        "score": 29,
+        "symbol": "José"
       }
     ],
     "EopXvR28cgVDQMyMfAss1hWRsyVnKrJ4Hc1xGB9cpump": [
@@ -5675,6 +5709,12 @@
         "ts": 1794082190062,
         "price": 0.000003173,
         "score": 40,
+        "symbol": "José"
+      },
+      {
+        "ts": 1794084388293,
+        "price": 0.000003171,
+        "score": 46,
         "symbol": "José"
       }
     ],
@@ -5690,6 +5730,12 @@
         "price": 0.00004449,
         "score": 38,
         "symbol": "MEME"
+      },
+      {
+        "ts": 1794084388293,
+        "price": 0.00004449,
+        "score": 36,
+        "symbol": "MEME"
       }
     ],
     "FB5jzwHwJExWQXQ2gDpK7kACqd3sArofYZFEtCd5pump": [
@@ -5703,6 +5749,12 @@
         "ts": 1794082190062,
         "price": 0.000003428,
         "score": 39,
+        "symbol": "LAUNCH"
+      },
+      {
+        "ts": 1794084388293,
+        "price": 0.000002948,
+        "score": 21,
         "symbol": "LAUNCH"
       }
     ],
@@ -5718,6 +5770,12 @@
         "price": 0.000001954,
         "score": 37,
         "symbol": "BOOBIE"
+      },
+      {
+        "ts": 1794084388293,
+        "price": 0.0000019,
+        "score": 22,
+        "symbol": "BOOBIE"
       }
     ],
     "6TL9QgfwNdZZv1GokU64XVtP5xh7wX5FgutvSdBQpump": [
@@ -5726,12 +5784,24 @@
         "price": 0.000004311,
         "score": 85,
         "symbol": "mem"
+      },
+      {
+        "ts": 1794084388293,
+        "price": 0.000002926,
+        "score": 60,
+        "symbol": "mem"
       }
     ],
     "F3cCiTtB5hh7sf2BudYeXm45jPpF4FNbADRjje7MDfrF": [
       {
         "ts": 1794082190062,
         "price": 0.00001387,
+        "score": 80,
+        "symbol": "LIQUID"
+      },
+      {
+        "ts": 1794084388293,
+        "price": 0.000009158,
         "score": 80,
         "symbol": "LIQUID"
       }
@@ -5742,6 +5812,12 @@
         "price": 0.0004814,
         "score": 79,
         "symbol": "GIGAHUG"
+      },
+      {
+        "ts": 1794084388293,
+        "price": 0.000001684,
+        "score": 41,
+        "symbol": "GIGAHUG"
       }
     ],
     "F7PuP5Typwuv3P6dtbB7N6fBVmqYSWu7We7S4wT1pump": [
@@ -5749,6 +5825,12 @@
         "ts": 1794082190062,
         "price": 0.0001565,
         "score": 78,
+        "symbol": "DEMWOJAK"
+      },
+      {
+        "ts": 1794084388293,
+        "price": 0.000001979,
+        "score": 38,
         "symbol": "DEMWOJAK"
       }
     ],
@@ -5758,6 +5840,12 @@
         "price": 0.000002611,
         "score": 75,
         "symbol": "delga"
+      },
+      {
+        "ts": 1794084388293,
+        "price": 0.0000026,
+        "score": 49,
+        "symbol": "delga"
       }
     ],
     "5EGnnZ1HRhvacTBcAzmBifoD9j2vrwUCbd6UQ5USzAZD": [
@@ -5765,6 +5853,12 @@
         "ts": 1794082190062,
         "price": 0.00001393,
         "score": 74,
+        "symbol": "RIZZMAS"
+      },
+      {
+        "ts": 1794084388293,
+        "price": 0.0000101,
+        "score": 37,
         "symbol": "RIZZMAS"
       }
     ],
@@ -5774,12 +5868,24 @@
         "price": 0.0005294,
         "score": 63,
         "symbol": "Jose"
+      },
+      {
+        "ts": 1794084388293,
+        "price": 0.0006895,
+        "score": 69,
+        "symbol": "Jose"
       }
     ],
     "nd8AaKQzPYB4EneZhZ2ii2cWHQMRmbiSqWTb3Dmpump": [
       {
         "ts": 1794082190062,
         "price": 0.000003072,
+        "score": 53,
+        "symbol": "sink"
+      },
+      {
+        "ts": 1794084388293,
+        "price": 0.000003048,
         "score": 53,
         "symbol": "sink"
       }
@@ -5790,10 +5896,48 @@
         "price": 0.000009835,
         "score": 40,
         "symbol": "DanaWhite"
+      },
+      {
+        "ts": 1794084388293,
+        "price": 0.000007212,
+        "score": 26,
+        "symbol": "DanaWhite"
+      }
+    ],
+    "FCZoR7cQiT3JPACjr3b4GJ5QNVeHaJeqsZSAGYmHBAGS": [
+      {
+        "ts": 1794084388293,
+        "price": 0.00005572,
+        "score": 72,
+        "symbol": "SHAW"
+      }
+    ],
+    "5bhvBUBxeHHbTx9Hpu2bBKd8UCrzoeim1UWjxZ7h9KoL": [
+      {
+        "ts": 1794084388293,
+        "price": 0.000002521,
+        "score": 54,
+        "symbol": "KOL"
+      }
+    ],
+    "AxcMAGQXrS2zrGibXkGq5K38Au5FD9MsviHp4M76pump": [
+      {
+        "ts": 1794084388293,
+        "price": 0.00002008,
+        "score": 44,
+        "symbol": "CLAUDIA"
+      }
+    ],
+    "76EABWAydCs13EcLDCjF9LBUiGaeKuEzoynrGA4fpump": [
+      {
+        "ts": 1794084388293,
+        "price": 0.000004535,
+        "score": 39,
+        "symbol": "BILL"
       }
     ]
   },
   "running": true,
-  "lastRun": "2026-11-07T20:09:50.062Z",
+  "lastRun": "2026-11-07T20:46:28.293Z",
   "lastStatus": "OK"
 }
